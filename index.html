@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <h1>Calculator</h1>
+
+    <div class="calculadora">
+
+    <div class="result">
+        <p class="resultado"></p>
+    </div>
+
+    <div class="top">
+
+        <div class="linha">
+            <button class="botao operator" onclick="limpar()">C</button>
+            <button class="botao operator" onclick="apagar()"><</button>
+            <button class="botao operator" onclick="inserir('/')">/</button>
+            <button class="botao operator" onclick="inserir('*')">X</button>
+        </div>
+        <div class="linha">
+            <button class="botao" onclick="inserir('7')">7</button>
+            <button class="botao" onclick="inserir('8')">8</button>
+            <button class="botao" onclick="inserir('9')">9</button>
+            <button class="botao operator" onclick="inserir('-')">-</button>
+        </div>
+        <div class="linha">
+            <button class="botao" onclick="inserir('4')">4</button>
+            <button class="botao" onclick="inserir('5')">5</button>
+            <button class="botao" onclick="inserir('6')">6</button>
+            <button class="botao operator" onclick="inserir('+')">+</button>
+        </div>
+
+    </div>
+
+    <div class="bottom">
+
+        <div class="left">
+
+            <div class="linha">
+                <button class="botao" onclick="inserir('1')">1</button>
+                <button class="botao" onclick="inserir('2')">2</button>
+                <button class="botao" onclick="inserir('3')">3</button>
+            </div>
+            <div class="linha">
+                <button class="botao zero" onclick="inserir('0')">0</button>
+                <button class="botao" onclick="inserir('.')">.</button>
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="linha">
+                <button class="botao igual" onclick="calcular()">=</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
